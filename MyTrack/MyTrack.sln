@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTrack", "MyTrack\MyTrack.csproj", "{129189EB-C042-4035-8AAD-CBD0E01286E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlConnector", "D:\Main Project\final solution 26july ver1\SqlConnector\SqlConnector.csproj", "{D02EF69E-50DD-4479-906E-FE091A8290DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{129189EB-C042-4035-8AAD-CBD0E01286E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{129189EB-C042-4035-8AAD-CBD0E01286E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{129189EB-C042-4035-8AAD-CBD0E01286E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{129189EB-C042-4035-8AAD-CBD0E01286E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D02EF69E-50DD-4479-906E-FE091A8290DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D02EF69E-50DD-4479-906E-FE091A8290DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D02EF69E-50DD-4479-906E-FE091A8290DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D02EF69E-50DD-4479-906E-FE091A8290DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

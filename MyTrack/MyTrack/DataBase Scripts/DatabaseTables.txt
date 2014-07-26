@@ -1,0 +1,57 @@
+------------Users -------------------
+UserId - int(primary) auto
+UserName- nvarchar(30)
+Gender - nvarcahr(10)
+ContactNumber - navarcahr(10)
+Password - nvarchar(20)
+---------------------------------------
+
+
+------------Fares----------------------
+FareId - int(primary) auto
+TrainNumber- nvarchar(6)
+Station_From - nvarcahr(30)
+Station_To - navarcahr(30)
+Fare - money 
+----------------------------------------
+
+
+---------Trains-------------------------
+TrainNumber - int(primary) auto (1000)
+TrainName - nvarchar(30)
+Source - nvarchar(30)
+Destination - nvarcahr(30)
+Distance - int
+ArrivalTime - nvarchar(6)
+DepartureTime - nvarchar(6)
+---------------------------------------
+
+
+
+------------Tickets-------------------
+TicketNumber - int(primary) auto (1)
+PnrNumber - nvarchar(10)
+TrainName - nvarchar(20)
+TrainNumber - int
+TransactionId - int ( TicketNumber + 500) 
+DateOfBooking - nvarchar(10)
+Class - nvarchar(10)
+Source - nvarchar(20)
+Destination - nvarcahr(20)
+DateOfJourney - nvarchar(10)
+Distance - int
+PassengersCount - int
+MobileNumber - nvarchar(10)
+EmailId - nvarchar(50)
+Fare - money
+------------------------------------------------------
+
+
+----------------Passengers----------------------------
+PnrNumber - From Tickets 
+Name - nvarchar(20)
+Age - int
+Gender - nvarcahr(10)
+SeatNumber - int
+------------------------------------------------
+

@@ -1,0 +1,7 @@
+C:\Users\trainee\Documents\GitHub\MergedTrack\MyTrack\MyTrack\obj\Debug\MyTrack.csprojResolveAssemblyReference.cache
+C:\Users\trainee\Documents\GitHub\MergedTrack\MyTrack\MyTrack\bin\MyTrack.dll
+C:\Users\trainee\Documents\GitHub\MergedTrack\MyTrack\MyTrack\bin\MyTrack.pdb
+C:\Users\trainee\Documents\GitHub\MergedTrack\MyTrack\MyTrack\bin\SqlConnector.dll
+C:\Users\trainee\Documents\GitHub\MergedTrack\MyTrack\MyTrack\bin\SqlConnector.pdb
+C:\Users\trainee\Documents\GitHub\MergedTrack\MyTrack\MyTrack\obj\Debug\MyTrack.dll
+C:\Users\trainee\Documents\GitHub\MergedTrack\MyTrack\MyTrack\obj\Debug\MyTrack.pdb

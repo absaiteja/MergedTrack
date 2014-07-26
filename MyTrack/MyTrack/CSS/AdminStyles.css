@@ -1,0 +1,47 @@
+﻿body {
+}
+#MiddleDiv {
+    width: 800px;
+    height: 80%;
+    margin-top: 5%;
+}
+.ControlDiv{
+    margin-bottom:5%;
+    margin-top: 2%;
+}
+.Mandatory {
+    margin-left:1%;
+}
+.ControlDiv span {
+    width:145px;
+    display:inline-block;
+}
+.ControlDiv label span {
+    display:inline;
+    color:red;
+}
+.RightSpan input[type="text"] {
+    width: 250%;
+    height: 40px;
+    border-radius: 10px;
+}
+.RightSpan input[type="text"]:hover {
+   background-color:ThreeDLightShadow;
+}
+.ControlDiv input[type="button"] {
+    margin-left:165% ;
+}
+.ControlDiv input[type="button"]{
+    width:85%;
+    height:40px;
+    border-radius:8px;
+}
+.ControlDiv input[type="button"]:hover {
+   background-color:ThreeDLightShadow;
+}
+#list {
+    float: right;
+}
+.chosen-container,.chosen-container-single {
+width:200px;
+}
