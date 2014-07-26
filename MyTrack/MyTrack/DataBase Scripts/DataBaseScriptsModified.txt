@@ -1,0 +1,167 @@
+USE [MyTrack]
+GO
+
+/****** Object:  Table [dbo].[Fares]    Script Date: 07/26/2014 17:50:10 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[Fares](
+	[FareID] [int] IDENTITY(1,1) NOT NULL,
+	[TrainNumber] [nvarchar](10) NULL,
+	[Station_From] [varchar](30) NULL,
+	[Station_To] [varchar](30) NULL,
+	[Fare] [money] NULL,
+ CONSTRAINT [PK_Fares] PRIMARY KEY CLUSTERED 
+(
+	[FareID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+
+
+USE [MyTrack]
+GO
+
+/****** Object:  Table [dbo].[Ticket]    Script Date: 07/26/2014 17:50:48 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Ticket](
+	[TicketNumber] [int] IDENTITY(1,1) NOT NULL,
+	[TrainName] [nvarchar](50) NULL,
+	[PNRNumber] [nvarchar](10) NULL,
+	[Source] [nvarchar](50) NULL,
+	[Destination] [nvarchar](50) NULL,
+	[DateOfJourney] [nvarchar](50) NULL,
+	[DateOfBooking] [nvarchar](50) NULL,
+	[Class] [nchar](10) NULL,
+	[Distance] [int] NULL,
+	[NoOfPassengers] [nvarchar](50) NULL,
+	[ArrivalTime] [nvarchar](50) NULL,
+	[DepartureTime] [nvarchar](50) NULL,
+	[TransactionId] [int] NULL,
+	[Fare] [money] NULL,
+ CONSTRAINT [PK_Ticket] PRIMARY KEY CLUSTERED 
+(
+	[TicketNumber] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+
+USE [MyTrack]
+GO
+
+/****** Object:  Table [dbo].[TrainDetails]    Script Date: 07/26/2014 17:51:02 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[TrainDetails](
+	[TrainNumber] [int] IDENTITY(1000,1) NOT NULL,
+	[TrainName] [nvarchar](50) NULL,
+	[Source] [nvarchar](50) NULL,
+	[Destination] [nvarchar](50) NULL,
+	[Distance] [int] NULL,
+	[ArrivalTime] [nvarchar](10) NULL,
+	[DepartureTime] [nvarchar](10) NULL,
+ CONSTRAINT [PK_TrainDetails] PRIMARY KEY CLUSTERED 
+(
+	[TrainNumber] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+
+
+USE [MyTrack]
+GO
+
+/****** Object:  Table [dbo].[Trains]    Script Date: 07/26/2014 17:51:21 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Trains](
+	[SId] [int] IDENTITY(1,1) NOT NULL,
+	[TrainId] [int] NOT NULL,
+	[TrainName] [nvarchar](50) NULL,
+	[Source] [nvarchar](50) NULL,
+	[Destination] [nvarchar](50) NULL
+) ON [PRIMARY]
+
+GO
+
+
+
+USE [MyTrack]
+GO
+
+/****** Object:  Table [dbo].[Users]    Script Date: 07/26/2014 17:51:32 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Users](
+	[UserId] [int] IDENTITY(1,1) NOT NULL,
+	[UserName] [nvarchar](30) NULL,
+	[Gender] [nchar](10) NULL,
+	[ContactNumber] [nchar](10) NULL,
+	[PassWord] [nvarchar](20) NULL,
+ CONSTRAINT [PK_Users] PRIMARY KEY CLUSTERED 
+(
+	[UserId] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+
+
+USE [MyTrack]
+GO
+
+/****** Object:  Table [dbo].[Passengers]    Script Date: 07/26/2014 17:51:44 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Passengers](
+	[PNRNumber] [nvarchar](10) NOT NULL,
+	[Name] [nvarchar](20) NULL,
+	[Age] [int] NULL,
+	[Gender] [nchar](10) NULL,
+	[BerthPreference] [nchar](10) NULL,
+	[SeatNumber] [int] NULL,
+ CONSTRAINT [PK_Passengers] PRIMARY KEY CLUSTERED 
+(
+	[PNRNumber] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
